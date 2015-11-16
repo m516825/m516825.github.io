@@ -19,22 +19,24 @@
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/materialize.min.js"></script>
-  <nav id="navbar">
-  	<div class="nav-wrapper white">
-    	<a href="#main" onclick="navFunc(this)" class="brand-logo" style="left:5%; color:black" id="Go_main">Han Hao</a>
-    	<a href="#" onclick="navFunc(this)" data-activates="mobile-demo" class="button-collapse" id="Go_main"><i class="material-icons">menu</i></a>
-    	<ul class="right hide-on-med-and-down">
-      	<li><a onclick="navFunc(this)" href="#" style="color:black" id="Go_about">about</a></li>
-      	<li><a onclick="navFunc(this)" href="#" style="color:black" id="Go_product">product</a></li>
-      	<li><a onclick="navFunc(this)" href="#" style="color:black" id="Go_contact">contact</a></li>
-    	</ul>
-    	<ul class="side-nav" id="mobile-demo">
-      	<li><a onclick="navFunc(this)" href="#" style="color:black" id="Go_about">about</a></li>
-      	<li><a onclick="navFunc(this)" href="#" style="color:black" id="Go_product">product</a></li>
-      	<li><a onclick="navFunc(this)" href="#" style="color:black" id="Go_contact">contact</a></li>
-    	</ul>
-  	</div>
-	</nav>
+  <div class="navbar-fixed">
+    <nav id="navbar">
+    	<div class="nav-wrapper white">
+      	<a href="#main" onclick="navFunc(this)" class="brand-logo" style="left:5%; color:black" id="Go_main">Han Hao</a>
+      	<a href="#" onclick="navFunc(this)" data-activates="mobile-demo" class="button-collapse" id="Go_main"><i class="material-icons">menu</i></a>
+      	<ul class="right hide-on-med-and-down">
+        	<li><a onclick="navFunc(this)" href="#" style="color:black" id="Go_about">about</a></li>
+        	<li><a onclick="navFunc(this)" href="#" style="color:black" id="Go_product">product</a></li>
+        	<li><a onclick="navFunc(this)" href="#" style="color:black" id="Go_contact">contact</a></li>
+      	</ul>
+      	<ul class="side-nav" id="mobile-demo">
+        	<li><a onclick="navFunc(this)" href="#" style="color:black" id="Go_about">about</a></li>
+        	<li><a onclick="navFunc(this)" href="#" style="color:black" id="Go_product">product</a></li>
+        	<li><a onclick="navFunc(this)" href="#" style="color:black" id="Go_contact">contact</a></li>
+      	</ul>
+    	</div>
+  	</nav>
+  </div>
   <div class="page active" id="main">
     <div id="index-banner" class="parallax-container">
       <div class="section no-pad-bot">
