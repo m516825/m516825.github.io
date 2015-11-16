@@ -142,18 +142,18 @@
   </div>
 
   <div class="page container" id="product" style="display:none;">
-    <div class="row" style="margin-top:30px;">
+
+    <div class="row"  style="margin-top:30px;">
       <div class="col s12">
-        <ul class="tabs">
+        <ul class="tabs" style="height:20px">
           <li class="tab col s3 active"><a href="#test1">Test 1</a></li>
           <li class="tab col s3"><a href="#test2">Test 2</a></li>
           <li class="tab col s3"><a href="#test3">Test3</a></li>
           <li class="tab col s3"><a href="#test4">Test 4</a></li>
-          <div class="indicator" style="right: 366px; left: 183px;"></div>
         </ul>
       </div>
       <div id="test1" class="col s12">
-        <div class="row" style="margin-top:30px;"> 
+        <div class="row"> 
           <div class="col s4">
             <div class="card hoverable">
               <div class="card-image waves-effect waves-block waves-light">
@@ -199,7 +199,7 @@
         </div>
       </div>
       <div id="test2" class="col s12">
-        <div class="row" style="margin-top:30px;"> 
+        <div class="row"> 
           <div class="col s4">
             <div class="card hoverable">
               <div class="card-image waves-effect waves-block waves-light">
@@ -307,10 +307,18 @@
       var sections = document.getElementsByClassName('page');
       for(var i=0; i<sections.length; i++)
         sections[i].style.display = "none";
-      var Go_target = navItem.getAttribute('id')
+      var Go_target = navItem.getAttribute('id');
       var target = Go_target.substring(3, Go_target.length);
       document.getElementById(target).style.display = "block";
-      wisndow.scrollTo(0, 0);
+      window.scrollTo(0, 0);
+      sections = document.getElementsByClassName('hide-tab-scrollbar');
+      for(var i=0;i<sections.length;i++) {
+        sections[i].setAttribute('class', '');
+      }
+      sections = document.getElementsByClassName('hide-tab-scrollbar');
+      for(var i=0;i<sections.length;i++) {
+        sections[i].setAttribute('class', '');
+      }
     }
  	</script>
 
