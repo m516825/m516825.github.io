@@ -5731,10 +5731,10 @@ small {
   .card.small, .card.medium, .card.large {
     position: relative; }
     .card.small .card-image, .card.medium .card-image, .card.large .card-image {
-      max-height: 60%;
+      max-height: 75%;
       overflow: hidden; }
     .card.small .card-content, .card.medium .card-content, .card.large .card-content {
-      max-height: 40%;
+      max-height: 25%;
       overflow: hidden; }
     .card.small .card-action, .card.medium .card-action, .card.large .card-action {
       position: absolute;
