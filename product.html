@@ -316,6 +316,13 @@
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="./assets/js/materialize.min.js"></script>
  	<script>
+    function eqHeight() {
+      var cw = $('.small').width();
+      $('.small').css({
+          'height': cw + 'px'
+      });
+      console.log("height")
+    }
     //init tabs
     $(document).ready(function(){
       $('ul.tabs').tabs();
@@ -345,6 +352,9 @@
         sections[i].setAttribute('class', '');
       }
     }
+    $(document).ready(eqHeight);
+    $(window).resize(eqHeight);
+
  	</script>
 
 </body>
