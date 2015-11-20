@@ -70,13 +70,13 @@
             <div class="row" style="margin-top:20px">
               <div class="input-field col s5">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">Name</label>
+                <input id="name" type="text" class="validate">
+                <label for="name">Name</label>
               </div>
               <div class="input-field col s5">
                 <i class="material-icons prefix">phone</i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Telephone</label>
+                <input id="telephone" type="tel" class="validate">
+                <label for="telephone">Telephone</label>
               </div>
             </div>
             <div class="row">
@@ -88,7 +88,7 @@
             </div>
             <div class="row">
               <div class="input-field col s5" style="left:45px;">
-                <select multiple>
+                <select multiple id="select">
                   <option value="" disabled selected>Option 0</option>
                   <option value="1">Option 1</option>
                   <option value="2">Option 2</option>
@@ -115,8 +115,8 @@
           </form>
         </div>
       </div>
-      <button class="btn waves-effect waves-light right" type="submit" name="action" style="bottom:10px;">Send
-              <i class="material-icons right">send</i>
+      <button onclick="sendMail(); return false" class="btn waves-effect waves-light right" type="submit" name="action" style="bottom:10px;">Send
+        <i class="material-icons right">send</i>
       </button>
     </div>
 
@@ -172,10 +172,13 @@
     function sendMail() {
       var link = "mailto:m516825@gmail.com"
                + "?cc="
-               + "&subject=" + escape("This is my subject")
-               + "&body=" + escape(document.getElementById('myText').value);
-
-      window.location.href = link;
+               + "&subject=" + escape("Sample request")
+               + "&body=" + escape(document.getElementById('textarea1').value + "\n\n\n\n\n")
+               + escape("Form :" + document.getElementById('name').value + "\n")
+               + escape("Email :" + document.getElementById('email').value + "\n")
+               + escape("Tel :" + document.getElementById('telephone').value + "\n")
+               + escape("Request :" + document.getElementById('telephone').value + "\n");
+      window.location.href = link 
     }
  	</script>
 
